@@ -2,21 +2,18 @@ help([[
 loads UFS Model prerequisites for Hera/IntelLLVM
 ]])
 
-prepend_path("MODULEPATH", "/scratch1/NCEPDEV/nems/role.epic/spack-stack/spack-stack-1.6.0/envs/fms-2024.01/install/modulefiles/Core")
+prepend_path("MODULEPATH", "/scratch1/NCEPDEV/nems/role.epic/spack-stack/spack-stack-1.8.0-llvm/envs/ue-llvm-ifx-2024.2.1/install/modulefiles/Core")
 
-stack_intel_ver=os.getenv("stack_intel_ver") or "2021.5.0"
-load(pathJoin("stack-intel", stack_intel_ver))
+stack_oneapi_ver=os.getenv("stack_oneapi_ver") or "2024.2.1"
+load(pathJoin("stack-oneapi", stack_intel_ver))
 
-stack_impi_ver=os.getenv("stack_impi_ver") or "2021.5.1"
+stack_impi_ver=os.getenv("stack_impi_ver") or "2021.13"
 load(pathJoin("stack-intel-oneapi-mpi", stack_impi_ver))
 
-load("gnu")
-load("intel/2023.2.0")
-
-cmake_ver=os.getenv("cmake_ver") or "3.23.1"
+cmake_ver=os.getenv("cmake_ver") or "3.27.9"
 load(pathJoin("cmake", cmake_ver))
 
-load("ufs_common")
+load("ufs-weather-model-env/1.0.0")
 
 nccmp_ver=os.getenv("nccmp_ver") or "1.9.0.1"
 load(pathJoin("nccmp", nccmp_ver))
