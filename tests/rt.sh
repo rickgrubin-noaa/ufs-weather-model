@@ -781,7 +781,8 @@ case ${MACHINE_ID} in
     QUEUE="batch"
     COMPILE_QUEUE="batch"
     PARTITION="orion"
-    dprefix="/work/noaa/stmp/${USER}"
+    # one-off spack-stack automated build/test: https://github.com/JCSDA/spack-stack/pull/1213
+    dprefix="/work/noaa/epic/role-epic/jenkins/workspace/spack-stack/ufs/Orion/stmp/${USER}"
     DISKNM="/work/noaa/epic/UFS-WM_RT"
     STMP="${dprefix}/stmp"
     PTMP="${dprefix}/stmp"
