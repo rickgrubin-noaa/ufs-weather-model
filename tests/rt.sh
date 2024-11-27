@@ -755,7 +755,8 @@ case ${MACHINE_ID} in
     COMPILE_QUEUE="batch"
 
     PARTITION=
-    dprefix="/scratch1/NCEPDEV"
+    #dprefix="/scratch1/NCEPDEV"
+    dprefix="/scratch1/NCEPDEV/nems/Richard.Grubin/LLVM"
     DISKNM="/scratch2/NAGAPE/epic/UFS-WM_RT"
     STMP="${dprefix}/stmp4"
     PTMP="${dprefix}/stmp2"
