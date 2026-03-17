@@ -5,7 +5,7 @@ help([[Load UFS Model common libraries]])
 local ufs_modules = {
   {["jasper"]          = "4.2.4"},
   {["libpng"]          = "1.6.37"},
-  {["hdf5"]            = "1.14.3"},
+  {["hdf5"]            = "1.14.5"},
   {["netcdf-c"]        = "4.9.2"},
   {["netcdf-fortran"]  = "4.6.1"},
   {["parallelio"]      = "2.6.2"},
