@@ -5,7 +5,7 @@ loads UFS Model prerequisites for Ursa/Intel LLVM
 prepend_path("MODULEPATH", "/contrib/spack-stack/spack-stack-2.1.0/envs/ue-oneapi-2025.3.1/modules/Core")
 
 stack_oneapi_ver=os.getenv("stack_oneapi_ver") or "2025.3.1"
-load(pathJoin("stack-oneapi", stack_oneapi_ver))
+load(pathJoin("stack-intel-oneapi-compilers", stack_oneapi_ver))
 
 stack_impi_ver=os.getenv("stack_impi_ver") or "2021.17"
 load(pathJoin("stack-intel-oneapi-mpi", stack_impi_ver))
